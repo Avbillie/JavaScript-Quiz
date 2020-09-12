@@ -1,0 +1,233 @@
+a {
+  color: white;
+}
+
+#test {
+  padding: 10px 40px 40px 40px;
+  font-size: 1.4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover {
+  color: white;
+}
+
+html,
+.body-container {
+  height: 100%;
+  background-image: url("C:/Users/antho/Desktop/GW_Coding_BootCamp/Module-4/JavaScript-Quiz/Assets/Images/cool-background.png");
+}
+
+
+img {
+  padding: 0% 0% !important;
+  height: auto;
+  width: 10rem;
+}
+
+.header-container {
+  background-color: whitesmoke;
+  margin-bottom: 4rem;
+  border-bottom: 0.3rem solid chartreuse;
+}
+
+.header-section-alignment {
+  margin-top: 10px;
+}
+
+.header-title {
+  color: rgb(46, 45, 45);
+  text-align: center;
+  text-shadow: 2px 2px 2px chartreuse;
+  font-family: fantasy;
+  font-weight: 400;
+}
+
+.time-seperator {
+  color: #03afff;
+  text-decoration-style: none;
+  margin: 0 0;
+  max-height: 25px;
+  padding: 0 0;
+}
+
+.header-score {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: fantasy;
+  font-weight: 200 !important;
+  color: black;
+  text-shadow: 1.5px 1.5px 1.5px #03afff;
+}
+
+.score {
+  color: #03afff;
+  text-shadow: none;
+}
+
+.header-time {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: fantasy;
+  font-weight: 200 !important;
+  color: black;
+  text-shadow: 1.5px 1.5px 1.5px #03afff;
+}
+
+.time {
+  color: #03afff;
+  text-shadow: none;
+}
+.timer {
+  text-align: center;
+  color: #03afff;
+  text-decoration: none;
+  margin: 0 auto;
+  max-height: 25px;
+  padding: 0px 5px !important;
+}
+
+.intro-container {
+  text-align: center;
+  border: solid 0.1rem red;
+  background-color: whitesmoke;
+}
+
+.intro-header {
+  color: chartreuse;
+  text-shadow: 2px 2px 2px black;
+}
+
+.intro-instructions-focalpoint {
+  text-decoration: underline red;
+}
+
+.submitBtn {
+  text-align: center;
+  background-color: #03afff;
+  color: white;
+  border-color: white;
+}
+
+.submitBtn:hover {
+  background-color: chartreuse;
+  color: white;
+}
+
+.startBtn-Section {
+  text-align: center;
+
+  width: max-content;
+  margin: 0 auto;
+}
+
+.startBtn {
+  text-align: center;
+  margin: 2rem auto;
+  background-color: red;
+  font-family: fantasy;
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px black;
+  border-color: white;
+}
+
+.startBtn:hover {
+  background-color: chartreuse;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+}
+
+.startBtn p {
+  padding: 1rem 2rem;
+  margin: 0 0;
+}
+
+.HighScoresBtn {
+  text-align: center;
+  margin: 3rem 1rem;
+  background-color: red;
+  font-family: fantasy;
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 2px black;
+  border-color: white;
+}
+
+.HighScoresBtn:hover {
+  background-color: chartreuse;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+}
+
+.HighScoresBtn p {
+  padding: 1rem 2rem;
+  margin: 0 0;
+}
+
+/* questions */
+
+.question-container {
+  text-align: start;
+  border: solid 0.2rem chartreuse;
+  background-color: whitesmoke;
+  width: max-content;
+  margin: 0% auto;
+}
+
+.question-container h2 {
+  margin: 0rem auto 1rem;
+  width: auto;
+}
+
+.questions {
+  margin: 0rem 1rem 1rem 0rem;
+  background-color: chartreuse;
+}
+
+.questions:hover {
+  background-color: rgb(91, 189, 140);
+}
+
+/* .questions:focus{
+  background-color: rgb(91, 189, 140);
+} */
+
+/* High Scores */
+
+.HighScore-container {
+  background-color: whitesmoke;
+  border: solid chartreuse 0.2rem;
+  margin: 0 auto;
+}
+
+.HighScoreHeader {
+  text-align: center;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 2px chartreuse;
+  font-family: fantasy;
+  font-weight: 400;
+}
+
+.HighScoreHeader h3 {
+  border-bottom: red solid 0.1rem;
+}
+.scoresContent {
+  place-content: center;
+}
+
+.names {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.userInfo {
+  margin: 0 0;
+  display: flex;
+}
+.loggedScore{
+  color: #03afff;
+
+}

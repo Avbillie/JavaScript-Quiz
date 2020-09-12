@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+        href="Assets/Bootstrap/bootstrap.css">
+    <!-- App css -->
+    <link rel="stylesheet"
+        href="Assets/Bootstrap/styles.css">
+    <!-- jQuery -->
+
+    <!-- JavaScript -->
+
+
+</head>
+
+<body class="body-container container-fluid">
+
+    <header class="header-container row">
+
+        <section class="header-title col-lg-12 col-md-12 col-sm-12">
+            <h1 class="header-section-alignment">Beat the Clock!</h1>
+        </section>
+
+    </header>
+
+    <section class="HighScore-container col-lg-6 col-md-6 col-sm-6">
+        <div class="HighScoreHeader col-lg-7 col-md-12 col-sm-12">
+            <h3 class="col-lg-12">High Scores</h3>
+        </div>
+
+        <section class="names col-lg-8 col-md-6 col-sm-6">
+            <div class="userInfo col-lg-8">
+                <h5 class="col-lg-6">Anthony</h5>
+                <h5 class=" loggedScore col-lg-6">60</h5>
+            </div>
+        </section>
+
+    </section>
+
+    <section class="startBtn-Section col-lg-12">
+        <button class="startBtn" type="submit">
+            <a href="index.html">
+                <p class="col-lg-12 col-md-12 col-sm-12">
+                    Homepage
+                </p>
+            </a>
+        </button>
+        <button class="HighScoresBtn" id="enterScore" type="submit">
+                <p class="col-lg-12 col-md-12 col-sm-12">
+                    Enter Score
+                </p>
+            </a>
+        </button>
+        <button class="HighScoresBtn" type="submit">
+            <a href="questions.html">
+                <p class="col-lg-12 col-md-12 col-sm-12">
+                    Retry Quiz
+                </p>
+            </a>
+        </button>
+    </section>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $(".names").append(localStorage.userData);
+
+            $("#enterScore").click(function () {
+                var lastScore = localStorage.setItem("score", finalscore)
+                
+               finalscore = localStorage.getItem("finalScore")
+
+                if (localStorage.getItem("finalScore") != null) {
+
+                    var question = prompt("Enter your name or initials");
+                    localStorage.setItem("UserName", question)
+
+                    while (question == "") {
+                        alert(
+                            "Please enter your name or initials or click cancel to exit to the Homepage."
+                        )
+                        question = prompt("Enter your name or initials");
+                    }
+                    if (question != "") {
+                        // var data = localStorage.getItem("serName");
+                        var questionResponse = localStorage.getItem("UserName")
+
+                        if (localStorage.userData) {
+                            localStorage.userData = localStorage.userData + "<div class='userInfo col-lg-8'>" +
+                                "<h5 class= 'col-lg-6'>" +
+                                questionResponse +
+                                "</h5>" +
+                                "<h5 class='loggedScore col-lg-6'>" + finalscore + "</h5>" + "</div>";
+                        } else {
+                            localStorage.userData = "<div class='userInfo col-lg-8'>" +
+                                "<h5 class= 'col-lg-6'>" +
+                                questionResponse +
+                                "</h5>" +
+                                "<h5 class='loggedScore col-lg-6'>" + finalscore + "</h5>" + "</div>";
+                        }
+                    }if(finalscore > lastScore ) {
+                        $(".names").prepend(localStorage.userData);
+                    }else{
+                        $(".names").append(localStorage.userData);
+                    }
+
+                    if (question == undefined) {
+                        var score = localStorage.removeItem("finalScore")
+                    }
+                    var userName = localStorage.removeItem("UserName")
+                    var lastScore = localStorage.setItem("score", finalscore)
+                    var finalscore = localStorage.removeItem("finalScore")
+                } else {
+                    alert("You must take the quiz before entering a score.")
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
