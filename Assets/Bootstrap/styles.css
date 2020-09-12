@@ -17,7 +17,7 @@ a:hover {
 html,
 .body-container {
   height: 100%;
-  background-image: url("Assets/Images/cool-background.png");
+  background-image: url("https://raw.githubusercontent.com/Avbillie/JavaScript-Quiz/master/Assets/Images/cool-background.png");
   background-position: cover;
 
 
